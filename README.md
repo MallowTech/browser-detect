@@ -1,20 +1,38 @@
 # Browser
-  You can easily detect the browser and its version using this.
+  Hurry!, Super easy to find your browser and add your logics based on it.
+  
+## Installation 
+  Since it is a jQuery plugin, you need to add **jQuery**. Your code must be followed in below given order.
+  
+**1. Add jQuery**
+```
+<script src="..dist/jquery.min.js"></script>
+```
+**2. Call Back Events**
+Call back browser events, which will triggered based on the browser.
+
+```
+This is an example for the chrome browser test, version which returns your browser Version
+$(document).on("Chrome", function(event, version){
+    //Your Script here.
+});
+```
+**3. Browser Detection Plugin**
+Add the plugin script at the end of the closing `</body>` tag
+```
+<script src="..dist/browser-detection.min.js"></script>
+```
+
 # Example
 | Browser | Code |
 | --- | --- |
-| Chrome | $(document).on("Chrome", function(event, version){ })|;
-| OmniWeb | $(document).on("OmniWeb", function(event, version){ })|;
-| Safari | $(document).on("Safari", function(event, version){ })|;
-| Opera | $(document).on("Opera", function(event, version){ })|;
-| iCab | $(document).on("iCab", function(event, version){ })|;
-| Konqueror | $(document).on("Konqueror", function(event, version){ })|;
-| Firefox | $(document).on("Firefox", function(event, version){ })|;
-| Camino | $(document).on("Camino", function(event, version){ })|;
-| Netscape | $(document).on("Netscape", function(event, version){ })|;
-| Explorer | $(document).on("Explorer", function(event, version){ })|;
-|  | $(document).on("Chrome", function(event, version){ })|;
-|  | $(document).on("Chrome", function(event, version){ })|;
-|  | $(document).on("Chrome", function(event, version){ })|;
-|  | $(document).on("Chrome", function(event, version){ })|;
-|  | $(document).on("Chrome", function(event, version){ })|;
+| Chrome | **Chrome**|;
+| OmniWeb | **OmniWeb** |;
+| Safari | **Safari**|;
+| Opera | **Opera**|;
+| iCab | **iCab**|;
+| Konqueror | **Konqueror**|;
+| Firefox | **Firefox**|;
+| Camino | **Camino**|;
+| Netscape | **Netscape**|;
+| Explorer | **Explorer**|;
