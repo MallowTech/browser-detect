@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Browser Detection</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).on("Chrome", function(event , version){
+  $("body").append('<div style="text-align: center;"><h1>Hurry!!!</h1><p>You are using chrome version ' + version +'</p></div>');
+});
+</script>
+<script src="./dist/browser-detection.js"></script>
+</body>
